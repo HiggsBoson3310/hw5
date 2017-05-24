@@ -7,31 +7,47 @@ Vamos a mostrar las gr\'aficas obtenidas tanto de histogramas de valores, como d
 \subsection{Canal 1}
 Veamos primero que sucedio con el canal uno.
 \begin{center}
-  \includegraphics[scale=0.4]{canal1.png}
+  \includegraphics[scale=0.5]{fig1.png}
 \end{center}
 Podemos ver como es que el centro que se encontr\'o al utilizar el metodo de Monte Carlo coincide de forma muy buena con el centro aparente que podr\'ia identificarse a plena vista dadas las posiciones de la moleculas. Vemos ademas como es que el radio esta distribuido de una forma casi uniforme en todo el poro; es decir, el no quedan muchas moleculas amontonadas lejos del circulo delimitador, Aunque hayan varias que estan apiladas unas sobre otras de en los puntos m\'as exteriores de la gr\'afica.
 \begin{center}
-  \includegraphics[scale=0.4]{centrox_1.png}
+  \includegraphics[scale=0.5]{fig3.png}
 \end{center}
 En este histograma podemosver como es que se da la convergencia del m\'etodo hacia los valores indicados en la gr\'afica. En la mayor''ia de los casos en los que se corri\'o como test, la convergencia fue r\'apida y se obtuvieron valores de frecuencia de m\'as de la mitad de las iteraciones (i.e. $25000$) para los valores finales.
 \begin{center}
-  \includegraphics[scale=0.4]{centroy_1.png}
+  \includegraphics[scale=0.5]{fig4.png}
 \end{center}
 Un comportamiento similar se dio con el centro en $y$. En la mayor\'ia de los casos se obtuvieron convergencias r\'apidas hacia el valor final con frecuencias de m\'as de la mitad de las iteraciones.
 \subsection{Canal2}
 En el canal dos sucedi\'o algo muy similar a lo que se obtuvo antes.
 \begin{center}
-  \includegraphics[scale=0.4]{canal2.png}
+  \includegraphics[scale=0.5]{fig2.png}
 \end{center}
 La principal diferencia que hay en este caso es que la distribuci\'on de las moleculas con respecto del circulo de mayor radio es diferente. En este caso podemos ver que hay unas mucho m\'as alejadas de y m\'as amontonadas.
 \begin{center}
-  \includegraphics[scale=0.4]{centrox_2.png}
+  \includegraphics[scale=0.5]{fig5.png}
 \end{center}
 En cuanto a convergencias, el comportamiento es basicamente el mismo, tenemos un valor que se repite con una frecuencia cercana a la mitad de las iteraciones totales.
 \begin{center}
-  \includegraphics[scale=0.4]{centroy_2.png}
+  \includegraphics[scale=0.5]{fig6.png}
 \end{center}
 De la misma forma que en el caso anterior la convergencia a los puntos es muy r\'apida.\\
 \newpage
+\section{Carga de un circuito}
+En este problema se nos proponen una serie de datos que corresponden al tiempo en el que se carga un capacitor y se pretenden encontrar los parametros ideales mediante un metodo Monte Carlo de estimaci\'on Bayesiana. Este metodo se logro implementar con gran exito como podemos ver en la siguiente gr\'afica\footnote{En caso de que la gr\'afica no corresponda a los datos experiementales suguiero correr el codigo en Python nuevamente, en tanto los RunTime Warnings afectan el comportamiento del c\'odigo}:
+\begin{center}
+  \includegraphics[scale=0.5]{fig_21.png}
+\end{center}
+Vemos como es que unos parametros $R\in \left(4.5 , 6 \right]$ y $C \in \left(9.6 , 10.1 \right)$ son los m\'as adecuados para el sistema.\\
 
+Debido a esto es que si vemos los resultados en las gr\'aficas que comparan el valor del parametro con la funci\'on de verosimilitud, los minimos de este logaritmo siempre est\'an sobre el intervalo que mencionamos anteriormente.
+
+\begin{center}
+  \includegraphics[scale=0.5]{fig_23.png}
+\end{center}
+
+
+\begin{center}
+  \includegraphics[scale=0.5]{fig_22.png}
+\end{center}
 \end{document}
